@@ -6,7 +6,7 @@ import {
   removeFromCart,
 } from "../../store/features/slices/cartSlice";
 import { useNavigate } from "react-router-dom";
-import ScrollToTopButton from "../FilteredProducts/ScrollToTopButton ";
+import ScrollToTopButton from "../FilteredProducts/ScrollToTopButton";
 import { singleProduct } from "../../store/features/slices/productsSlice";
 import Footer from "../Footer/Footer";
 import {

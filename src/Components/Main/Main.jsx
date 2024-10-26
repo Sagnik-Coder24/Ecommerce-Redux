@@ -4,7 +4,7 @@ import Slider from "../Slider/Slider";
 import NavigateButtons from "../NavigateButtons/NavigateButtons";
 import ProductSection from "../ProductSection/ProductSection";
 import Footer from "../Footer/Footer";
-import ScrollToTopButton from "../FilteredProducts/ScrollToTopButton ";
+import ScrollToTopButton from "../FilteredProducts/ScrollToTopButton";
 
 const Main = () => {
   return (

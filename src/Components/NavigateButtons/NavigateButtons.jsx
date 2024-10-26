@@ -24,7 +24,7 @@ const NavigateButtons = () => {
               size="lg"
               variant="outlined"
               ripple={true}
-              className="hover:bg-gray-300 duration-300 ease-in-out"
+              className="hover:bg-orange-100 duration-300 ease-in-out min-w-32"
               onClick={() => {
                 // dispatch(buttonClick(true));
                 dispatch(filterProducts(button));

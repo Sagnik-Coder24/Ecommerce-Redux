@@ -18,7 +18,7 @@ import {
 } from "../../store/features/slices/productsSlice";
 import Error from "../ErrorPage/Error";
 import CartButton from "../Cart/CartButton";
-import ScrollToTopButton from "./ScrollToTopButton ";
+import ScrollToTopButton from "./ScrollToTopButton";
 import { storeData } from "../../assets/data/dummyData";
 import { buttons } from "../NavigateButtons/NavigateButtons";
 
@@ -107,8 +107,8 @@ const FilteredProducts = () => {
                     ripple={true}
                     className={
                       filter_gender === item
-                        ? "text-black hover:bg-orange-600 duration-300 ease-in-out mr-4 mb-2 bg-orange-300"
-                        : "text-black hover:bg-orange-100 duration-300 ease-in-out mr-4 mb-2"
+                        ? "text-black hover:bg-orange-600 duration-300 ease-in-out mr-4 mb-2 bg-orange-300 min-w-44"
+                        : "text-black hover:bg-orange-100 duration-300 ease-in-out mr-4 mb-2 min-w-44"
                     }
                   >
                     {item}
@@ -124,7 +124,7 @@ const FilteredProducts = () => {
                 size="lg"
                 variant="outlined"
                 ripple={true}
-                className="text-black hover:bg-orange-100 duration-300 ease-in-out mr-4 mb-2"
+                className="text-black hover:bg-orange-100 duration-300 ease-in-out mr-4 mb-2 min-w-44"
               >
                 {price_sort} Price
               </Button>
@@ -140,7 +140,7 @@ const FilteredProducts = () => {
                     size="lg"
                     variant="outlined"
                     ripple={true}
-                    className="text-black hover:bg-orange-100 duration-300 ease-in-out mr-4 mb-2"
+                    className="text-black hover:bg-orange-100 duration-300 ease-in-out mr-4 mb-2 min-w-44"
                   >
                     <div className="flex justify-between items-center gap-4">
                       <p>Select a color</p>
@@ -199,9 +199,9 @@ const FilteredProducts = () => {
                     size="lg"
                     variant="outlined"
                     ripple={true}
-                    className="text-black hover:bg-orange-100 duration-300 ease-in-out mr-4 mb-2"
+                    className="text-black hover:bg-orange-100 duration-300 ease-in-out mr-4 mb-2 min-w-44"
                   >
-                    <div className="flex justify-between items-center gap-4">
+                    <div className="flex justify-between items-center gap-4 text-nowrap">
                       <p>Select a size</p>
                       {filter_size && <span>( {filter_size} )</span>}
                     </div>
@@ -252,7 +252,7 @@ const FilteredProducts = () => {
                 size="lg"
                 variant="outlined"
                 ripple={true}
-                className="text-black hover:bg-orange-100 duration-300 ease-in-out mr-4 mb-2"
+                className="text-black hover:bg-orange-100 duration-300 ease-in-out mr-4 mb-2 min-w-44"
               >
                 Clear Filters
               </Button>
