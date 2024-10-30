@@ -87,41 +87,49 @@ import jogger12 from "../images/jogger12.jpg";
 export const sliderData = [
   {
     id: "0",
+    productId: "17",
     img: shoe5,
     text: "Step into style, one shoe at a time",
   },
   {
     id: "1",
+    productId: "18",
     img: shoe6,
     text: "Walk the talk with our latest collection",
   },
   {
     id: "2",
+    productId: "19",
     img: shoe7,
     text: "Shoes that make every step count",
   },
   {
     id: "3",
+    productId: "81",
     img: shoe13,
     text: "Fashion starts from the ground up",
   },
   {
     id: "4",
+    productId: "82",
     img: shoe1,
     text: "Summers SALE up to 50% OFF what are you wating for",
   },
   {
     id: "5",
+    productId: "83",
     img: shoe2,
     text: "AUTUMN is coming, choose what suits you THE BEST",
   },
   {
     id: "6",
+    productId: "84",
     img: shoe3,
     text: "Make your feet as comfortable as walking on the beach",
   },
   {
     id: "7",
+    productId: "85",
     img: shoe4,
     text: "Choose between basketball and fashion or choose both",
   },
@@ -1045,5 +1053,16 @@ export const storeData = [
     color: ["white", "green", "black"],
     gender: "male",
     price: 200,
+  },
+  {
+    id: "85",
+    img: shoe4,
+    name: "Casual Shoes 13",
+    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+    type: "Shoes",
+    size: ["36", "38", "40", "42"],
+    color: ["white", "green", "black"],
+    gender: "male",
+    price: 210,
   },
 ];

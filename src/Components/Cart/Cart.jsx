@@ -77,11 +77,13 @@ const Cart = ({ openModal, setOpen }) => {
                     </p>
                     <p className="text-black text-sm font-inter tracking-normal leading-none pt-2">
                       Single Item Price:{" "}
-                      <span className="ml-2">{item.price} $</span>
+                      <span className="ml-2 text-nowrap">{item.price} $</span>
                     </p>
                     <p className="text-black text-sm font-inter tracking-normal leading-none pt-2">
                       Total Items Price:{" "}
-                      <span className="ml-2">{item.totalPrice} $</span>
+                      <span className="ml-2 text-nowrap">
+                        {item.totalPrice} $
+                      </span>
                     </p>
                     <div className="pt-4">
                       <Button
@@ -99,7 +101,7 @@ const Cart = ({ openModal, setOpen }) => {
               </div>
             ))}
           </DialogBody>
-          <DialogFooter className="flex justify-between items-center pb-5">
+          <DialogFooter className="flex justify-between items-center pb-5 flex-wrap gap-4">
             <div className="flex justify-start items-center text-black text-base font-inter tracking-normal leading-none">
               <p>Total Price: </p>
               <span className="font-bold ml-2 w-20">{totalPrice} $</span>

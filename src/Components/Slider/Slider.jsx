@@ -6,10 +6,13 @@ import {
   prevSlide,
 } from "../../store/features/slices/sliderSlice";
 import { sliderData } from "../../assets/data/dummyData";
+import { useNavigate } from "react-router-dom";
+import { singleProduct } from "../../store/features/slices/productsSlice";
 
 const Slider = () => {
   const slideIndex = useSelector((state) => state.slider.value);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -18,6 +21,12 @@ const Slider = () => {
 
     return () => clearInterval(interval);
   }, [slideIndex]);
+
+  const handleClick = () => {
+    const id = sliderData[slideIndex].productId;
+    dispatch(singleProduct(id));
+    navigate(`/filtered-products/Shoes/${id}`);
+  };
 
   return (
     <div className="relative pb-4">
@@ -34,12 +43,16 @@ const Slider = () => {
             >
               <div>
                 <img
-                  className="absolute h-[500px] w-full md:h-[850px] object-cover"
+                  onClick={handleClick}
+                  className="absolute h-[500px] w-full md:h-[850px] object-cover cursor-pointer"
                   src={item.img}
                   alt="shoes"
                 ></img>
               </div>
-              <div className="absolute top-28 md:top-44 mx-auto left-[50%] -translate-x-1/2">
+              <div
+                onClick={handleClick}
+                className="absolute top-28 md:top-44 mx-auto left-[50%] -translate-x-1/2 select-none cursor-pointer"
+              >
                 <p className="text-white text-4xl font-inter font-bold tracking-normal leading-none [text-shadow:2px_2px_0_#000,-2px_-2px_0_#000,2px_-2px_0_#000,-2px_2px_0_#000]">
                   {item.text}
                 </p>

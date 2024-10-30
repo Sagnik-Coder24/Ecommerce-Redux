@@ -69,7 +69,7 @@ const Checkout = () => {
   return (
     <>
       <div className="min-h-screen bg-orange-50 p-4 flex flex-col items-center">
-        <h1 className="text-2xl font-bold text-orange-600 mb-6">
+        <h1 className="text-2xl font-bold text-orange-600 mb-6 ml-20">
           Checkout Page
         </h1>
         <div className="bg-white p-4 rounded-lg shadow-md w-full lg:w-3/4 mb-4">
@@ -152,7 +152,7 @@ const Checkout = () => {
                           </span>
                         </div>
                       </div>
-                      <div className="w-40 h-full flex flex-col justify-between gap-8">
+                      <div className="w-20 h-full flex flex-col justify-between gap-8">
                         <Button
                           onClick={() => dispatch(addToCart(item))}
                           color="red"

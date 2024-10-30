@@ -33,7 +33,7 @@ const ChangeColorBtn = ({ item }) => {
         leaveFrom="opacity-100 transform scale-100"
         leaveTo="opacity-0 transform scale-95"
       >
-        <div className="h-[188px] absolute translate-x-[52px] sm:translate-x-16 -translate-y-[105px] flex  items-center">
+        <div className="h-[188px] absolute -translate-x-20 -translate-y-[105px] flex  items-center">
           <div className="bg-orange-100 rounded-lg p-4 shadow-lg flex flex-col gap-4">
             {storeData
               .filter((product) => product.id === item.id)[0]
