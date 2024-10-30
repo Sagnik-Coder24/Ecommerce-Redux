@@ -1,6 +1,6 @@
 # E-Commerce App
 
-A sleek React + Vite web app showcasing a variety of clothing items from `dummyData.jsx`. Styled with Tailwind CSS for a polished look and seamlessly deployed using Netlify.
+A sleek React + Vite fashion eCommerce web app showcasing a variety of clothing items from `dummyData.jsx`. Styled with Tailwind CSS for a polished look, made using Redux, and seamlessly deployed using Netlify.
 
 ## Features
 
